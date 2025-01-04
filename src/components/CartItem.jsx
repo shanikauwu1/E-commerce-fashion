@@ -4,7 +4,8 @@ import { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
 
 const CartItem = ({ item }) => {
-  const { removeCartItem } = useContext(CartContext);
+  const { removeCartItem, amountIncrease, amountDescrease } =
+    useContext(CartContext);
   // destructure item
   const { id, title, image, price, amount } = item;
   return (
@@ -34,13 +35,21 @@ const CartItem = ({ item }) => {
             {/* quantity div */}
             <div className="flex justify-between  text-sm font-medium max-w-[100px] flex-1 border">
               <div className="flex-1 h-full flex justify-center items-center px-2 ">
-                <FaMinus />
+                <FaMinus
+                  onClick={() => {
+                    amountDescrease(id);
+                  }}
+                />
               </div>
               <div className="h-full flex justify-center items-center px-2 ">
                 {amount}
               </div>
               <div className="flex-1 h-full flex justify-center items-center px-2 ">
-                <FaPlus />
+                <FaPlus
+                  onClick={() => {
+                    amountIncrease(id);
+                  }}
+                />
               </div>
             </div>
             <div className="flex-1 flex justify-around items-center ">

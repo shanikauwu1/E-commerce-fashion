@@ -3,12 +3,12 @@ import { SidebarContext } from "../contexts/SidebarContext";
 import CartItem from "./CartItem";
 
 import { CartContext } from "../contexts/CartContext";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaTrashAlt } from "react-icons/fa";
 
 const Sidebar = () => {
   const { isOpen, setIsOpen } = useContext(SidebarContext);
 
-  const { cart } = useContext(CartContext);
+  const { cart, clearCart } = useContext(CartContext);
   console.log(useContext(CartContext));
   return (
     <div
@@ -36,6 +36,23 @@ const Sidebar = () => {
             </CartItem>
           );
         })}
+      </div>
+      {/* total amount */}
+      <div className="flex items-center justify-between px-4 mt-4">
+        <div className=" uppercase text-sm font-semibold text-gray-700">
+          <span className="mr-4">Total:</span>$1000
+        </div>
+
+        <div>
+          <div
+            onClick={() => {
+              clearCart();
+            }}
+            className="p-4 bg-red-600 text-white"
+          >
+            <FaTrashAlt />
+          </div>
+        </div>
       </div>
     </div>
   );
