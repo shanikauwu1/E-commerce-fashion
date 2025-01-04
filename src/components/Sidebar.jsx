@@ -8,12 +8,12 @@ import { FaArrowRight, FaTrashAlt } from "react-icons/fa";
 const Sidebar = () => {
   const { isOpen, setIsOpen } = useContext(SidebarContext);
 
-  const { cart, clearCart } = useContext(CartContext);
+  const { cart, clearCart, total } = useContext(CartContext);
   console.log(useContext(CartContext));
   return (
     <div
-      className={`fixed top-0 right-0 bg-white shadow-lg h-full w-full md:w-[35vw] xl:max-w-[30vw] transition-transform ${
-        isOpen ? "transform translate-x-0" : "transform translate-x-full"
+      className={`fixed top-0 right-0 z-30 bg-white shadow-lg h-full w-full md:w-[35vw] xl:max-w-[30vw] transition-transform ${
+        isOpen ? "transform translate-x-0" : "transform translate-x-full "
       }`}
     >
       <div className="flex justify-between items-center p-6 border-b ">
@@ -28,7 +28,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div>
+      <div className=" h-[520px] lg:h-[640px]  flex flex-col overflow-y-auto overflow-x-hidden ">
         {cart.map((item) => {
           return (
             <CartItem item={item} key={item.id}>
@@ -40,7 +40,7 @@ const Sidebar = () => {
       {/* total amount */}
       <div className="flex items-center justify-between px-4 mt-4">
         <div className=" uppercase text-sm font-semibold text-gray-700">
-          <span className="mr-4">Total:</span>$1000
+          <span className="mr-4">Total:</span>$ {parseFloat(total).toFixed(2)}
         </div>
 
         <div>
