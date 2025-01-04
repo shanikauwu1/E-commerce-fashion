@@ -20,7 +20,7 @@ const Header = () => {
     <div
       className={` ${
         isActive ? "bg-gray-300" : "bg-pink-200"
-      }  w-full px-8 py-2  flex  items-center justify-between fixed mb-12 z-40 border-b shadow-sm `}
+      }  w-full px-8 py-2  flex  items-center justify-between fixed mb-12 z-10 border-b shadow-sm `}
     >
       <Link to={"/"}>
         <div className="text-3xl flex items-center">
