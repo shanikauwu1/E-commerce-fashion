@@ -14,7 +14,6 @@ const Product = ({ product }) => {
     <>
       <div>
         <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
-          {id}
           <div className="w-full h-full flex ">
             {/* image  */}
             <div className="w-[200] mx-auto flex  justify-center items-center">
