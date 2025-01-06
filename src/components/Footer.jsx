@@ -1,7 +1,15 @@
 import React from "react";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  const currentYear = new Date().getFullYear();
+  return (
+    <footer className="bg-gray-700 p-8 text-white text-center">
+      <p className="mb-2">
+        © {currentYear} <span className="font-bold">Rayeli Fashions</span>. All
+        rights reserved.
+      </p>
+    </footer>
+  );
 };
 
 export default Footer;

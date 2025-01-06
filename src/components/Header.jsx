@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div
       className={` ${
-        isActive ? "bg-gray-300" : "bg-pink-200"
+        isActive ? "bg-gray-300" : "bg-red-200"
       }  w-full px-8 py-2  flex  items-center justify-between fixed mb-12 z-10 border-b shadow-sm `}
     >
       <Link to={"/"}>
