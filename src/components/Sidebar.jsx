@@ -8,7 +8,7 @@ import { FaArrowRight, FaTrashAlt } from "react-icons/fa";
 const Sidebar = () => {
   const { isOpen, setIsOpen } = useContext(SidebarContext);
 
-  const { cart, clearCart, total } = useContext(CartContext);
+  const { cart, clearCart, total, itemAmount } = useContext(CartContext);
   console.log(useContext(CartContext));
   return (
     <div
@@ -18,7 +18,7 @@ const Sidebar = () => {
     >
       <div className="flex justify-between items-center p-6 border-b ">
         <div className="font-semibold uppercase text-gray-500">
-          Shopping bag (0)
+          Shopping bag ({itemAmount})
         </div>
         <div className="cursor-pointer w-8 h-8 flex justify-center items-center">
           <FaArrowRight
@@ -52,6 +52,11 @@ const Sidebar = () => {
           >
             <FaTrashAlt />
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-center mt-2">
+        <div className="cursor-pointer bg-gray-200 p-4 w-full text-center font-semibold uppercase">
+          Checkout
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import { CartContext } from "../contexts/CartContext";
 
 const Product = ({ product }) => {
   const { addToCart } = useContext(CartContext);
-  // console.log(product);
+
   //destructure  the product
 
   const { id, image, category, title, price } = product;
