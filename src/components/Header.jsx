@@ -24,7 +24,8 @@ const Header = () => {
     >
       <Link to={"/"}>
         <div className="text-3xl flex items-center">
-          <img src={logo} alt="Rayeli's textiles" className="h-[60px] w-auto" />
+          <img src={logo} alt="Rayeli's textiles" className="h-[60px] w-auto" />{" "}
+          <span className="ml-2 text-xl uppercase ">Fashions</span>
         </div>
       </Link>
 
