@@ -39,13 +39,11 @@ A modern fashion e-commerce web app built with **React**, **Tailwind CSS**, and 
 ## 🛠️ Getting Started Locally
 
 <pre>
-   git clone https://github.com/shanikauwu1/E-commerce-fashion.git
-  cd E-commerce-fashion
+git clone https://github.com/shanikauwu1/E-commerce-fashion.git
+cd E-commerce-fashion
   
 </pre>
  
- 📸 Live Demo
-🔗 [Live site/](https://rayeli-fashions.netlify.app/)
 
 📬 Contact
 Shanika Ekanayake
