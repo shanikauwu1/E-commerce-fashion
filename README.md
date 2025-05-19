@@ -10,7 +10,7 @@ A modern fashion e-commerce web app built with **React**, **Tailwind CSS**, and 
 
 ## 📸 Screenshot
 
-![Homepage Preview](./assets/screenshot.jpg)
+![Homepage Preview](./src/assets/screenshot.jpg)
 
 
 ---
@@ -44,5 +44,6 @@ A modern fashion e-commerce web app built with **React**, **Tailwind CSS**, and 
   
 </pre>
  
-
+ 📸 Live Demo
+🔗 [Live site/](https://rayeli-fashions.netlify.app/)
    
