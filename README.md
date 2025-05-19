@@ -1,8 +1,48 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 👗 Rayeli Fashions
 
-Currently, two official plugins are available:
+A modern fashion e-commerce web app built with **React**, **Tailwind CSS**, and powered by the **Fake Store API**. It features dynamic product listings, a clean and responsive UI, and interactive components for a realistic shopping experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Site:** [rayeli-fashions.netlify.app](https://rayeli-fashions.netlify.app/)
+
+---
+
+## 📸 Screenshot
+
+<!-- Replace with your actual image path -->
+![Homepage Preview](./assets/screenshot.jpg)
+
+---
+
+## 🚀 Features
+
+- 🔄 **Real-Time Data**: Products fetched from [Fake Store API](https://fakestoreapi.com/)
+- 🖼️ **Dynamic Product Grid**: Displays product image, price, and title
+- 🧾 **Product Details Page** *(optional)*: View more info on selected product
+- 🛒 **Add to Cart UI** *(if implemented)*
+- 📱 **Responsive Design**: Tailored for desktop, tablet, and mobile views
+- 🎨 **Tailwind CSS Styling**: Clean, elegant and utility-first design
+
+---
+
+## 🧑‍💻 Technologies Used
+
+- **React.js** (via Vite)
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
+- **Fake Store API** for product data
+- **Netlify** for deployment
+
+---
+
+## 🛠️ Getting Started Locally
+
+<pre>
+   git clone https://github.com/shanikauwu1/E-commerce-fashion.git
+  cd E-commerce-fashion
+  
+</pre>
+ 
+
+   
