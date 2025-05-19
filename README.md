@@ -46,4 +46,8 @@ A modern fashion e-commerce web app built with **React**, **Tailwind CSS**, and 
  
  📸 Live Demo
 🔗 [Live site/](https://rayeli-fashions.netlify.app/)
+
+📬 Contact
+Shanika Ekanayake
+[LinkedIn](https://www.linkedin.com/in/shanikajayawardane/) | GitHub
    
