@@ -10,8 +10,8 @@ A modern fashion e-commerce web app built with **React**, **Tailwind CSS**, and 
 
 ## 📸 Screenshot
 
-<!-- Replace with your actual image path -->
 ![Homepage Preview](./assets/screenshot.jpg)
+
 
 ---
 
